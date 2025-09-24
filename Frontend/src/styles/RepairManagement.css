@@ -1,0 +1,357 @@
+/* Repair Management Styles */
+.repair-management {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.repair-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.repair-header h2 {
+  color: #2d3748;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.repair-stats {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.stat-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.stat-badge.pending {
+  background: #fed7aa;
+  color: #c2410c;
+}
+
+.stat-badge.progress {
+  background: #bfdbfe;
+  color: #1d4ed8;
+}
+
+.stat-badge.completed {
+  background: #bbf7d0;
+  color: #166534;
+}
+
+.repair-controls {
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: #f7fafc;
+  color: #4a5568;
+  border: 1px solid #e2e8f0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  background: #edf2f7;
+  border-color: #cbd5e0;
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border-color: #667eea;
+}
+
+.repairs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+}
+
+.repair-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.repair-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.repair-header-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: #f7fafc;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.repair-id {
+  font-weight: 600;
+  color: #4a5568;
+  font-size: 0.875rem;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.status-badge.orange {
+  background: #fed7aa;
+  color: #c2410c;
+}
+
+.status-badge.blue {
+  background: #bfdbfe;
+  color: #1d4ed8;
+}
+
+.status-badge.green {
+  background: #bbf7d0;
+  color: #166534;
+}
+
+.status-badge.gray {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.repair-info {
+  padding: 1.5rem;
+}
+
+.repair-info h3 {
+  color: #2d3748;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+}
+
+.customer-info {
+  background: #f7fafc;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid #e2e8f0;
+}
+
+.customer-info p {
+  margin: 0.25rem 0;
+  font-size: 0.875rem;
+  color: #4a5568;
+}
+
+.customer-info strong {
+  color: #2d3748;
+  font-weight: 600;
+}
+
+.problem-description,
+.services-requested {
+  margin-bottom: 1rem;
+}
+
+.problem-description strong,
+.services-requested strong {
+  color: #2d3748;
+  font-weight: 600;
+  font-size: 0.875rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.problem-description p,
+.services-requested p {
+  color: #718096;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+  background: #f7fafc;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.repair-meta {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.repair-meta p {
+  margin: 0.25rem 0;
+  font-size: 0.75rem;
+  color: #718096;
+}
+
+.repair-meta strong {
+  color: #4a5568;
+  font-weight: 600;
+}
+
+.repair-actions {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #e2e8f0;
+  background: #f7fafc;
+}
+
+.update-btn {
+  background: linear-gradient(135deg, #4299e1, #3182ce);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  font-size: 0.875rem;
+}
+
+.update-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(66, 153, 225, 0.3);
+}
+
+.no-repairs {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #718096;
+  background: white;
+  border-radius: 16px;
+  border: 2px dashed #e2e8f0;
+}
+
+.no-repairs p {
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+/* Update Modal Styles */
+.update-modal {
+  max-width: 500px;
+}
+
+.repair-summary {
+  background: #f7fafc;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+.repair-summary h4 {
+  color: #2d3748;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+}
+
+.repair-summary p {
+  color: #718096;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.status-select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+  box-sizing: border-box;
+}
+
+.status-select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.notification-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  background: white;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.notification-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .repair-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .repair-stats {
+    justify-content: center;
+  }
+  
+  .filter-buttons {
+    justify-content: center;
+  }
+  
+  .repairs-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .repair-header-card {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  .customer-info {
+    font-size: 0.8rem;
+  }
+}
