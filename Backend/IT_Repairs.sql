@@ -105,3 +105,24 @@
     telephone VARCHAR(20) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     );
+
+    CREATE TABLE admins (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(100) NOT NULL UNIQUE,
+    email VARCHAR(150) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    role ENUM('superadmin', 'admin', 'moderator') DEFAULT 'admin',
+    last_login TIMESTAMP NULL DEFAULT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+INSERT INTO admins (username, email, password, role)
+VALUES (
+    'admin',
+    'admin@example.com',
+    -- Hash for "admin123"
+    '$2a$12$/h1DYVhl/Ev0MQfiup1u9egUVv67Obm9W3oIpX9sEa/gJxRh/ITca',
+    'superadmin'
+);
+
