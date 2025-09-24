@@ -385,7 +385,7 @@
 
 // export default Home;
 
-/* eslint-disable react/jsx-no-comment-textnodes */
+ 
 /* eslint-disable react/no-unescaped-entities */
 
 
@@ -588,6 +588,7 @@ function Home() {
   }, [productGroups]);
 
   // Gestion du redimensionnement de la fenêtre (responsive)
+  // eslint-disable-next-line no-unused-vars
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const resizeTimeoutRef = useRef(null);
 
